@@ -48,7 +48,7 @@ public class PdfGeneratorMessageHandler implements Closeable {
 	@PostConstruct
 	void init() {
 		try {
-			connection = connectionFactory.createConnection("nicolas", "nicolas");
+			connection = connectionFactory.createConnection("ouerdia", "ouaa");
 			connection.start();
 			session = connection.createSession();
 			diplomaRequestConsummer = session.createConsumer(requestsQueue);
